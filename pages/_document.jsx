@@ -36,6 +36,12 @@ class MyDocument extends Document {
 					<link rel="stylesheet" href="/static/normalize.css" />
 					<link rel="stylesheet" href="/static/animate.css" />
 					<link
+						rel="shortcut icon"
+						href="/static/favicon.ico"
+						type="image/x-icon"
+					/>
+					<link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+					<link
 						rel="stylesheet"
 						type="text/css"
 						charSet="UTF-8"
