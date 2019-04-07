@@ -2,12 +2,6 @@ import React from "react";
 import Document, { Head, Main, NextScript } from "next/document";
 import flush from "styled-jsx/server";
 
-const socials = {
-	instagram: process.env.INSTAGRAM,
-	youtube: process.env.YOUTUBE,
-	vk: process.env.VK
-};
-
 class MyDocument extends Document {
 	static getInitialProps({ renderPage }) {
 		const { html, head, errorHtml, chunks } = renderPage();
@@ -27,7 +21,6 @@ class MyDocument extends Document {
 		const script = `
 			window.ENV = "${process.env.NODE_ENV}";
 			window.PORT = ${process.env.PORT};
-			window.SOCIALS = ${JSON.stringify(socials)}
 		`;
 		return (
 			<html lang="ru">
