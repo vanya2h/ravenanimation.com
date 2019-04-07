@@ -42,7 +42,7 @@ module.exports = composePlugins([
 						{
 							test: /\.(jpeg|jpg|png|mp4|svg)$/,
 							use: {
-								loader: "url-loader",
+								loader: "file-loader",
 								options: {
 									limit: 1,
 									outputPath: "static/",

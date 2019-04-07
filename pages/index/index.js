@@ -165,7 +165,7 @@ class IndexPage extends React.PureComponent {
 								<div className={styles.inner}>
 									<div className={styles.items}>
 										<div className={styles.item}>
-											<Icon icon="idea" svgClassName={styles.icon} />
+											<Icon icon="idea" className={styles.icon} />
 											<div className={styles.content}>
 												<h3>Опытная команда</h3>
 												<p>
@@ -177,7 +177,7 @@ class IndexPage extends React.PureComponent {
 										<div className={styles.item}>
 											<Icon
 												icon="group"
-												svgClassName={classnames(styles.icon, styles.manager)}
+												className={classnames(styles.icon, styles.manager)}
 											/>
 											<div className={styles.content}>
 												<h3>Мы помогаем бизнесу</h3>
@@ -190,7 +190,7 @@ class IndexPage extends React.PureComponent {
 										<div className={styles.item}>
 											<Icon
 												icon="manager"
-												svgClassName={classnames(styles.icon, styles.manager)}
+												className={classnames(styles.icon, styles.manager)}
 											/>
 											<div className={styles.content}>
 												<h3>Мы всегда на связи</h3>
@@ -213,7 +213,7 @@ class IndexPage extends React.PureComponent {
 							<Container className={styles.container}>
 								<div className={styles.info_area}>
 									<div className={styles.title}>
-										<Icon icon="zap" svgClassName={styles.icon} />
+										<Icon icon="zap" className={styles.icon} />
 										<h1>Работать вместе!</h1>
 									</div>
 									<p>
