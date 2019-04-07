@@ -30,7 +30,7 @@ class MyDocument extends Document {
 			window.SOCIALS = ${JSON.stringify(socials)}
 		`;
 		return (
-			<html>
+			<html lang="ru">
 				<Head>
 					<script dangerouslySetInnerHTML={{ __html: script }} />
 					<link rel="stylesheet" href="/static/normalize.css" />
@@ -40,7 +40,30 @@ class MyDocument extends Document {
 						href="/static/favicon.ico"
 						type="image/x-icon"
 					/>
+					<title>RavenAnimation.com - Анимационная студия</title>
 					<link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+					<meta
+						name="og:title"
+						content="RavenAnimation.com - Анимационная студия"
+					/>
+					<meta
+						name="og:description"
+						content="Студия генерирующая анимационный контент. Работаем с 2D графикой, рисуем покадровую анимацию."
+					/>
+					<meta name="og:url" content="https://ravenanimation.com/" />
+					<meta name="og:site_name" content="Raven Animation Studio" />
+					<meta name="og:locale" content="ru_RU" />
+					<meta
+						name="og:video"
+						content="https://www.youtube.com/watch?v=YiQVwfgV6_M"
+					/>
+					<meta name="og:type" content="website" />
+					<meta
+						property="og:image"
+						content="https://s3.eu-central-1.amazonaws.com/ravenanimation.com/Yva.jpg"
+					/>
+					<meta property="og:image:width" content="1200" />
+					<meta property="og:image:height" content="623" />
 					<link
 						rel="stylesheet"
 						type="text/css"

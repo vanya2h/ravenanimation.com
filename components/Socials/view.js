@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ReactSVG from "react-svg";
 import styles from "./styles";
 
 const socialIconMapping = {
@@ -15,10 +14,7 @@ export const SocialsView = ({ socials }) =>
 			{Object.keys(socials).map(social => (
 				<a href={social} key={social}>
 					<div className={styles.social}>
-						<ReactSVG
-							src={socialIconMapping[social]}
-							svgClassName={styles.icon}
-						/>
+						<img src={socialIconMapping[social]} className={styles.icon} />
 					</div>
 				</a>
 			))}
