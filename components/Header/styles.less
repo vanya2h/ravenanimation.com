@@ -1,0 +1,60 @@
+@import "~@theme/colors";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  font-size: 17px;
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+  padding: 15px 15px;
+  flex: 1 1 auto;
+  text-align: center;
+  cursor: pointer;
+
+  .icon {
+    margin-left: 1rem;
+    vertical-align: middle;
+  }
+
+  &:before {
+    content: "";
+    transform: translateY(-5px);
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    left: 0;
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) all;
+    border-top: 4px solid @black;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+.menu a:hover {
+  &:before {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}

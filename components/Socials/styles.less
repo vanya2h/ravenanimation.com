@@ -1,0 +1,30 @@
+.root {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  > * + * {
+    margin-left: 1.2rem;
+  }
+}
+
+.social {
+  width: 50px;
+  height: 50px;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  background: black;
+  border-radius: 100%;
+  padding: 15px;
+
+  .icon {
+    * {
+      fill: white;
+      stroke: white;
+    }
+  }
+
+  &:hover {
+    border-color: black;
+    transform: scale(1.15);
+    box-shadow: 0 0 5px fadeout(black, 80%);
+  }
+}

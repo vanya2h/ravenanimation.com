@@ -1,0 +1,29 @@
+{
+  "presets": [["next/babel", { "preset-env": { "modules": "commonjs" } }]],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    "transform-class-properties",
+    "transform-function-bind",
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "@components": ["./components"],
+          "@utils": ["./utils"],
+          "@theme": ["./theme"],
+          "@root": ["./"],
+          "@consts": ["./consts"],
+          "@services": ["./services"],
+          "@static": ["./static"],
+          "@providers": ["./providers"],
+          "@HOC": ["./HOC"],
+          "@email-templates": ["./email-templates"],
+          "@actions": ["./actions"],
+          "@store": ["./store"],
+          "@api": ["./api"]
+        }
+      }
+    ]
+  ]
+}

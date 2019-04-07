@@ -1,0 +1,33 @@
+.sliderWrapper {
+  position: relative;
+}
+
+.arrow {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background: black;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s all ease-in-out;
+  transform-origin: center center;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.left {
+  left: -46px;
+}
+
+.right {
+  right: -46px;
+}
