@@ -22,10 +22,10 @@ class MyDocument extends Document {
 			window.ENV = "${process.env.NODE_ENV}";
 			window.PORT = ${process.env.PORT};
 		`;
+
 		return (
 			<html lang="ru">
 				<Head>
-					<script dangerouslySetInnerHTML={{ __html: script }} />
 					<link rel="stylesheet" href="/static/normalize.css" />
 					<link rel="stylesheet" href="/static/animate.css" />
 					<link
@@ -33,7 +33,7 @@ class MyDocument extends Document {
 						href="/static/favicon.ico"
 						type="image/x-icon"
 					/>
-					<title>RavenAnimation.com - Анимационная студия</title>
+
 					<link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
 					<meta
 						name="og:title"
@@ -75,11 +75,15 @@ class MyDocument extends Document {
 					/>
 					<meta name="theme-color" content="#ffffff" />
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
+					{this.props.head}
 				</Head>
 				<body>
+					<script dangerouslySetInnerHTML={{ __html: script }} />
+					<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js" />
+
 					<Main />
 					<NextScript />
-					<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js" />
+
 					<script
 						dangerouslySetInnerHTML={{
 							__html: `new SmoothScroll('a[href*="#"]', {
